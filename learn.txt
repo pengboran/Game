@@ -1,1 +1,358 @@
-pengboran
+
+http://caibaojian.com/chrome-keyboard.html  谷歌快捷键使用
+
+http://www.css88.com/archives/6053       用javascript比较语义化版本号
+
+http://www.css88.com/doc/lodash/          Lodash 中文文档
+
+http://www.w3school.com.cn/php/index.asp    php教程 
+
+https://git-for-windows.github.io            git下载地址
+
+https://github.com/xufei/blog                angularJs讲解
+
+http://isux.tencent.com/css3/tools.html     css动画工具
+
+http://code2img.test.h5jun.com/#             图片生成工具
+
+http://www.css88.com/jqapi-1.9/           jq.api中文文档
+
+https://cn.vuejs.org/v2/guide/instance.html    vue.js中文文档
+
+http://es6.ruanyifeng.com/#docs/let        Es6入门
+
+https://fulifuli.top/jishuzhai.html      全面资源
+
+http://www.365mini.com/                   专注于编程开发技术分享
+
+http://www.w3cfuns.com/                       web前端论坛 (常用)
+
+https://zhuanlan.zhihu.com/p/27653434    正则学习
+
+https://aotu.io/index.html                     京东凹凸实验室资源
+
+http://www.jianshu.com/                        简书
+
+http://www.zxhuan.com/                         爱前端
+
+http://hao.caibaojian.com                       码农头条
+
+https://juejin.im/timeline/frontend             倔金网
+
+http://www.phpvar.com/                        学习论坛   
+
+http://www.w3school.com.cn/ajax/               ajax教程
+
+http://how2j.cn/                                java实例教程
+
+http://libs.baidu.com/jquery/1.9.1/jquery.js   jq百度CDN
+
+http://www.xuansite.com/                       网站设计参考
+
+http://www.swiper.com.cn/                     移动端触摸滑动事件(框架)
+
+http://alvarotrigo.com/fullPage/               移动端触摸滑动事件(框架)
+
+http://www.superslide2.com/                   网站常用框架7
+
+http://v3.bootcss.com/css/                    bootstrap-3.3.5-dist框架
+
+http://www.w3school.com.cn/json/json_syntax.asp   json教程
+
+http://jsonlint.com/                            检查json文件 
+
+http://handlebarsjs.com/                        json框架
+
+https://github.com/                            代码托管网站
+
+http://www.oschina.net/question/tag/github      社交编程论坛 
+
+https://www.zhihu.com/                           知乎网 
+
+http://www.php100.com/html/program/divcss/2013/0904/1230.html   css精灵
+
+http://bbs.lbsyun.baidu.com/forum.php           百度地图api论坛
+
+http://www.css88.com/doc/zeptojs_api/#           zepto.js api文档 (轻量级)  
+
+几种框架：React, VUE, Angular    
+
+http://www.cnblogs.com/-walker/category/758373.html    随笔（学习）
+
+http://www.w3cschool.cn/css3/oj26bfli.html             CSS3特性
+
+http://www.36zhen.com/my                              36镇收藏网站
+
+
+我的36镇 http://www.36zhen.com/my?id=316
+
+
+弹幕墙demo：http://codepen.io/huluoyang/full/GZbBwL//
+
+http://www.runoob.com/angularjs/angularjs-intro.html      菜鸟教程angularJS文档
+
+http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js  引用cdn
+
+http://amazeui.org/              中国首个开源 HTML5 跨屏前端框架
+
+http://datatables.club/example/#api      datatables（表格处理） 中文文档
+
+https://www.datatables.net/              datatables（表格处理） 英文文档 
+ 
+ 《极客学院》，《慕课网》，《百度传课》，《网易云课堂》，《麦子学院》   
+
+   CSDN,Segmentfault,博客园,掘金,Stackoverflow,伯乐在线等
+
+http://www.gulpjs.com.cn/                自动化构建工具 （gulpjs） 
+
+http://www.gruntjs.net/                  自动化构建工具   （gruntjs）
+
+米空格 js作品|http://www.laoshu133.com/Lab
+
+当耐特demo集合|http://kmdjs.github.io
+
+http://www.jq22.com/cssgsh  css格式化工具
+
+http://www.mycodes.net/171/7404.htm  源码之家
+
+https://acodernhc.github.io/2048/  游戏2048
+
+http://www.qdfuns.com/notes/26948/25d93193133cfa447b5a6b1ead921048.html  移动端开发资料
+
+
+http://www.cnblogs.com/jiqing9006/p/6030474.html   手机表单验证
+
+ 开源api接口
+http://apistore.baidu.com/astore/classificationservicelist.html
+https://www.juhe.cn/docs/index/cid/1
+
+http://www.cnblogs.com/itkuaixun/articles/2179404.html  博客园制作音频，视频
+
+
+http://www.cnblogs.com/skyHF/   博客园资料学习 
+
+
+https://www.zhihu.com/question/22951927   系统的资料
+
+工具推荐：Babel，Webpack，Postcss。
+框架推荐：React，Vue.js。
+
+http://www.axure.com/  移动端原形设计
+
+
+http://blog.csdn.net/u011500781/article/details/52022910  js实现随机移动的萤火虫 
+
+前端的app
+http://www.appcan.cn/
+
+
+angularjs搭建和特性（优点）
+1.页面直接引入angularjs问
+2.创建app指令来定义一个应用程序
+3.创建控制器来编写数据逻辑操作
+特点：http://www.cnblogs.com/Ejoy/p/5732280.html
+
+
+
+pc移动端区别
+http://www.360doc.com/content/16/0419/16/32276537_552033442.shtml
+
+
+
+http://www.auicss.com/index.php?s=Document 移动端aui框架
+
+
+http://www.iconfont.cn/plus/home/index?spm=a313x.7781069.1998910419.2.zgaCVR    阿里图标库
+
+
+http://www.bejson.com/jsonviewernew/  json在线查看视图
+
+
+http://www.runoob.com/tags/ref-pxtoemconversion.html  转换工具
+
+
+https://zhuanlan.zhihu.com/p/24524155   css特效集合
+
+http://caibaojian.com/css3-card.html     css3卡牌旋转效果
+
+
+https://zhuanlan.zhihu.com/p/24498240    高清图片资源
+
+https://www.zhihu.com/question/19951193  博客资源
+
+http://www.imooc.com/course/list 慕课网
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API    cavasAPi文档
+
+https://segmentfault.com/a/1190000005892330                    canvas游戏开发详解
+
+http://www.cnblogs.com/alex-web/p/5141581.html                 关于H5-canvas游戏开发初谈
+
+
+http://www.yl1001.com/group_article/2481471876001300.htm        canvas游戏开发指南
+
+
+http://www.createjs.cc/   h5游戏引擎
+
+
+http://www.ih5.cn/general-user/creative-templates/template     h5游戏制作模板
+
+https://hdm.faisco.cn/       凡科互动
+
+
+http://www.9miao.com/thread-114895-1-1.html      h5游戏
+
+http://www.lymoozzc.com/phone/demo/index.html     原生js编写的小游戏（雍正上朝）
+
+
+http://www.jianshu.com/p/e7bb97218946  正则校验
+
+
+
+http://www.jb51.net/css/163448.html   字体
+
+https://www.zhihu.com/question/26339902 软件工具
+
+
+http://javascript.ruanyifeng.com/#toc0        Javascript教程
+
+http://www.cnblogs.com/dolphinX/p/4385862.html    面向对象！
+
+http://www.cnblogs.com/wangfupeng1988/p/3977924.html             js博客园  王
+
+http://zzk.cnblogs.com/s/blogpost?Keywords=angularJs&pageindex=7  博客园angularJS资料
+
+http://www.cnblogs.com/whitewolf/   破狼
+
+https://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html   微信jsSDK文档
+
+
+开源的ng学习网站http://www.ngnice.com/
+
+http://www.cnblogs.com/vincentzee/p/6281968.html    前端全部资源
+
+https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/ch1.html  js函数指南
+
+https://segmentfault.com/a/1190000002900676#articleHeader3    构造函数
+
+
+http://www.jb51.net/w3school/js/jsref_obj_date.htm   处理日期时间api
+
+
+http://www.360doc.com/content/15/0730/11/14416931_488321394.shtml   常用的javascript的设计模式
+
+
+http://www.it1352.com/  IT屋
+
+http://www.360doc.com/myfiles.aspx    个人图书馆
+
+http://www.jb51.net/article/89297.htm    函数参数理解
+
+http://www.jb51.net/article/9726.htm      js模板技术
+
+http://blog.csdn.net/hguisu/article/details/7674195    栈的数据结构模式
+
+
+https://help.aliyun.com/document_detail/30395.html?spm=a2c0j.8206411.509665.7.oDy19t   阿里推荐引擎Api
+
+
+
+http://www.kancloud.cn/dennis/tgjavascript/241832    书Javascript半知半解
+ 
+
+http://www.niujc.com/free/100.html     快速生成二维码
+
+http://hovertree.com/tool/ewm/        js生成二维码
+
+
+http://www.cnblogs.com/skyHF/p/4958862.html    九宫格抽奖demo
+
+http://www.jq22.com/jquery-info10661   九宫格抽奖
+
+
+打赏功能：
+html:https://github.com/kujian/zanshang/blob/master/index.html
+
+css:https://github.com/kujian/zanshang/blob/master/style.css
+
+js:https://github.com/kujian/zanshang/blob/master/zanshang.js
+
+http://blog.csdn.net/xyw591238/article/details/51273493        js图片上传
+
+
+https://segmentfault.com/a/1190000004322487                  XMLHttpRequest 的简单使用
+
+
+http://blog.csdn.net/jingmo55/article/details/8787891?locationNum=14&fps=1   图片上传
+
+http://blog.csdn.net/fdipzone/article/details/38910553             使用FormData对象提交表单及上传图片
+
+https://developer.mozilla.org/zh-CN/docs/Web/API/FormData/Using_FormData_Objects      FormData 对象的使用
+
+http://jingyan.baidu.com/article/2009576192663bcb0721b49e.html      使用插件图片上传
+
+
+几款h5互动动画
+http://jdc.jd.com/fd/pp/weixiaodian_welcome/index.html  动画翻页效果页面（拍拍小店）
+
+http://wqs.jd.com/promote//2015/paper/index.html       h5滑屏demo
+
+http://w.benbun.com/momo/shaibingxiang/?from=timeline&isappinstalled=0  动画demo（饭局）
+
+http://jdc.jd.com/fd/promote/201601/djnianhuo/    年货送到家
+
+https://h5.m.jd.com/dev/2XWKseXyA7w7iLDceShBYt2fv4ZC/index.html?id=&type=custom0  赛跑游戏
+
+
+
+js测试网址
+https://www.nowcoder.com/practice/871a468deecf453589ea261835d6b78b?tpId=6&tqId=10960&rp=1&ru=/ta/js-assessment&qru=/ta/js-assessment/question-ranking
+
+
+Google Code 学习开发安卓App 网址：code.google.com
+
+博客园 开发者的网上家园网址：www.cnblogs.com
+
+ CSDN 全球最大中文IT社区，为IT专业技术人员提供最全面的信息传播和服务 网址：www.csdn.net
+
+掘金 高质量的技术分享社区 网址:gold.xitu.io
+
+IT类视频教学网站：
+
+ 慕课网（部分课程免费） 国内知名的IT技能学习平台 网址:www.imooc.com
+
+极客学院（部分课程免费）在线IT教育平台 网址: www.jikexueyuan.com
+
+ Learnable（英文） —学编程，超过5000个视频 网址：www.sitepoint.com
+
+麦子学院 除了IT技术培训，还提供产品、运营、UI设计培训 网址：www.maiziedu.com
+
+看各大名校公开课可以上这些网站：
+
+Coursera（中文） 一流大学的在线课程，免费加入 网址：www.coursera.org
+
+网易公开课 随时随地看名校课 网址：open.163.com
+
+网易云课堂 中文计算机专业课程 网址：study.163.com/curricula/cs.htm
+
+学堂在线 最大的中文慕课(MOOC)平台网址：www.xuetangx.com/
+
+ edX（英文） 免费学习来自全球顶尖大学（包括MIT和哈佛大学）的课程 网址：www.edx.org
+
+ Open Yale Courses(英文） 耶鲁大学的课程，既有传统的网络公开课，也有M〇〇C 网址:oyc.yale.edu
+
+ Open Learning Initiative（英文）卡麦基梅隆大学的一个开放学习计划 网址：http://oli.cmu.edu
+
+
+
+
+游戏http://www.9miao.com/forum.php?mod=viewthread&tid=108517  婚书
+
+
+
+https://mj921.github.io/game/%E5%85%AD%E8%BE%B9%E5%BD%A2%E6%B6%88%E6%B6%88%E4%B9%90.html
+
+
+
+
+
