@@ -4,8 +4,4 @@ git is  very good
 hufen
 how are you 
 wo buzhidao 
-<<<<<<< HEAD
-hello ok
-=======
-hello world
->>>>>>> featurel
+hello ok deoooooo
