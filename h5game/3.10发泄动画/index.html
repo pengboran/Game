@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3.15王老太的悲愤发泄</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="http://custom.hengdikeji.com/yajie_0308/Public/template/home/css/swiper.css">  
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        var resourceUrl="http://custom.hengdikeji.com/yajie_0308/Public/template/home/";
+        var cuponUrl = "/yajie_0308/index.php?m=Home&c=Index&a=my";
+        var saveUrl = "/yajie_0308/index.php?m=Home&c=Index&a=lottery";
+        //移动端版本兼容
+        var phoneWidth =  parseInt(window.screen.width);
+	     var phoneScale = phoneWidth/640;
+	     var ua = navigator.userAgent;
+	     if (/Android (\d+\.\d+)/.test(ua)){
+	               var version = parseFloat(RegExp.$1);
+	     if(version>2.3){
+	         document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	               }else{
+	        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	               }
+	     } else {
+	        document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+	     }
+    </script>
+	<!--播放音乐-->
+	<script type="text/javascript">
+	var open=0;
+	$(function(){
+		
+		setTimeout(function(){
+	        $("#bgmusic")[0].play();
+	        $('.mus')[0].src='http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/yue.png';
+	    },1000);
+	    $('.mus').click(function(){
+	        if (open==0) {
+	            $('.mus')[0].src='http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/yue2.png';
+	            $("#bgmusic")[0].pause();
+	            $('.sliderWrap').addClass();
+	            $('.mus').removeClass('rotate');
+	            open=1;
+	        }else if (open==1) {
+	            $('.mus')[0].src='http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/yue.png';
+	            $("#bgmusic")[0].play();
+	            $('.mus').addClass('rotate');
+	            open=0;
+	        }
+	    })
+	})
+	</script>
+</head>
+<body>
+<!-- 添加音乐 -->
+<audio id="bgmusic" class="yue" controls preload="auto" loop="loop">
+   <source src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/music/1.mp3" type="audio/mpeg">
+</audio>
+<audio id="bullet" class="yue" controls preload="auto">
+   <source src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/music/bullet.mp3" type="audio/mpeg">
+</audio>
+<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/yue.png" alt="" class="mus rotate">
+<!-- loading -->
+<div class="loading">
+    <div class="page">
+        <div class="h832" style="padding-top: 0px;">
+            <div class="innerDiv">
+                <div class="line_c">
+                    <div class="line"></div>
+                </div>
+                <p>0% loading...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="page page1">
+	<div class="h832" style="padding-top: 0px;">
+        <div class="innerDiv">
+            <img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/home_bg.jpg" alt="" class="home_bg">
+            <!--公司logo-->
+            <!--<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/logo.png" alt="" class="logo">-->          
+            <div class="home_tits">
+            	<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/home_tit1.png" alt="" class="home_tit">
+            	<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/home_tit2.png" alt="" class="home_tit" style="display:none;">
+            	<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/home_tit3.png" alt="" class="home_tit" style="display:none;">
+            </div>
+            <div class="man_c">
+            	<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/man.png" alt="" class="man">
+            	<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/man2.png" alt="" class="man" style="display:none;">
+            </div>
+            <div class="fire">
+            	<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/fire1.png" alt="">
+            	<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/fire2.png" alt="" style="display:none;">
+            </div>
+			<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/home_btn.png" alt="" class="home_btn tada">
+			<!--<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/active_btn.png" alt="" class="active_btn">
+			<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/prize_btn.png" alt="" class="prize_btn">-->
+        </div>
+    </div>
+    <!-- 活动规则 -->
+    <!--<div class="rule">
+    	<div class="rule_bg">
+    		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/colse.png" alt="" class="rule_colse">
+    		<h1>活动规则</h1>
+    		<p>又一年过去了，身边的无良商家依旧还在，实在让人咬牙切齿，雅洁急人之所需，为广大买家提供一个发泄的平台，发泄之后还能领取奖品喔~</p>
+    		<p>活动流程：<br/>点击您遇到过糟糕的购物经历，选择发泄方式，发泄完了之后填写个人信息抽奖，抽取到的优惠券请截图给雅洁天猫旗舰店客服领取优惠券。优惠券仅限活动期间内使用，逾期作废。</p>
+    		<p>活动时间：3月10日-3月22日</p>
+    		<p>本活动最终解释权归雅洁五金所有</p>
+    	</div>
+    </div>-->
+    <!-- 选择原因 -->
+    <div class="reason">
+    	<div class="h832" style="padding-top: 0px;">
+	        <div class="innerDiv">
+	        	<div class="reason_tit">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/p2_tit1.png" alt="" class="p2_tit">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/p2_tit2.png" alt="" class="p2_tit">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/p2_tit3.png" alt="" class="p2_tit">
+				</div>
+				
+				<div class="content1">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tu1.png" alt="">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tu2.png" alt="">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tu3.png" alt="">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tu4.png" alt="">
+				</div>
+				<div class="content1_1">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tu1_1.png" alt="" value='1'>
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tu2_1.png" alt="" value='2'>
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tu3_1.png" alt="" value='3'>
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tu4_1.png" alt="" value='4'>
+				</div>
+	        </div>
+	    </div>
+    </div>
+    <!-- 原因说明 -->
+    <div class="explain">
+    	<div class="h832" style="padding-top: 0px;">
+	        <div class="innerDiv">
+	        	<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/big_fire.png" alt="" class="big_fire fireBig">
+	        	<div class="tit1 explain_soll explain_soll1">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit1_1.png" alt="" class="explain_tit">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit1_2.png" alt="" class="explain_tit">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit1_3.png" alt="" class="explain_tit">
+	        	</div>
+	        	<div class="tit2 explain_soll explain_soll2">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit2_1.png" alt="" class="explain_tit">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit2_2.png" alt="" class="explain_tit">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit2_3.png" alt="" class="explain_tit">
+	        	</div>
+	        	<div class="tit3 explain_soll explain_soll3">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit3_1.png" alt="" class="explain_tit">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit3_2.png" alt="" class="explain_tit">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit3_3.png" alt="" class="explain_tit">
+	        	</div>
+	        	<div class="tit4 explain_soll explain_soll4">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit4_1.png" alt="" class="explain_tit">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit4_2.png" alt="" class="explain_tit">
+	        		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit4_3.png" alt="" class="explain_tit">
+	        	</div>
+				<!-- <img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tit1.png" alt="" class="explain_tit"> -->
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/oldwomen.png" alt="" class="oldwomen">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/eye.png" alt="" class="eye shan">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/fa_btn.png" alt="" class="fa_btn tada">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/zou.png" alt="" class="zou zouBig">
+	        </div>
+	    </div>
+    </div>
+    <!-- 选择场景 -->
+    <div class="scene">
+    	<div class="h832" style="padding-top: 0px;">
+	        <div class="innerDiv">
+	        	<div class="scene_soll">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene_tit1.png" alt="" class="scene_tit">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene_tit2.png" alt="" class="scene_tit">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene_tit3.png" alt="" class="scene_tit">
+				</div>
+				<div class="content2">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/zu1.png" alt="">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/zu2.png" alt="">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/zu3.png" alt="">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/zu4.png" alt="">
+				</div>
+				<div class="content2_1">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/zu1_1.png" alt="" value='1'>
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/zu2_1.png" alt="" value='2'>
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/zu3_1.png" alt="" value='3'>
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/zu4_1.png" alt="" value='4'>
+				</div>
+	        </div>
+	    </div>
+    </div>
+    <!-- 场景1 -->
+    <div class="scene1" style="display:none;">
+    	<div class="h832" style="padding-top: 0px;">
+	        <div class="innerDiv">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene1_tit.png" alt="" class="scenes_tit">
+				<p class="time">剩余 <span>10</span> 秒</p>
+
+				<div class="main">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene1_1.png" alt="" class="scene1_1">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene1_2.png" alt="" class="scene1_1" style="display:none;">
+				</div>
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/go2.png" alt="" class="go tada">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/addone.png" alt="" class="addone">
+				<p class="total">总共连击 <span>0</span> 下</p>
+	        </div>
+	    </div>
+    </div>
+    <!-- 场景2 -->
+    <div class="scene2" style="display:none;">
+    	<div class="h832" style="padding-top: 0px;">
+	        <div class="innerDiv">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene2_tit.png" alt="" class="scenes_tit">
+				<p class="time">剩余 <span>10</span> 秒</p>
+
+				<div class="main">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene2_1.png" alt="" class="scene2_1">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene2_2.png" alt="" class="scene2_1" style="display:none;">
+				</div>
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/go.png" alt="" class="go tada">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/addone.png" alt="" class="addone">
+				<p class="total">总共连击 <span>0</span> 下</p>
+	        </div>
+	    </div>
+    </div>
+    <!-- 场景3 -->
+    <div class="scene3" style="display:none;">
+    	<div class="h832" style="padding-top: 0px;">
+	        <div class="innerDiv">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene3_tit.png" alt="" class="scenes_tit">
+				<p class="time">剩余 <span>10</span> 秒</p>
+
+				<div class="main">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene3_1.png" alt="" class="scene3_1">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene3_2.png" alt="" class="scene3_1" style="display:none;">
+				</div>
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/go.png" alt="" class="go tada">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/addone.png" alt="" class="addone">
+				<p class="total">总共连击 <span>0</span> 下</p>
+	        </div>
+	    </div>
+    </div>
+    <!-- 场景4 -->
+    <div class="scene4" style="display:none;">
+    	<div class="h832" style="padding-top: 0px;">
+	        <div class="innerDiv">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene4_tit.png" alt="" class="scenes_tit">
+				<p class="time">剩余 <span>10</span> 秒</p>
+
+				<div class="main">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene4_1.png" alt="" class="scene4_1">
+					<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene4_2.png" alt="" class="scene4_1" style="display:none;">
+				</div>
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/go.png" alt="" class="go tada">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/addone.png" alt="" class="addone">
+				<p class="total">总共连击 <span>0</span> 下</p>
+	        </div>
+	    </div>
+    </div>
+    <!-- 结果页 -->
+    <div class="result">
+    	<div class="h832" style="padding-top: 0px;">
+	        <div class="innerDiv">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene4_tit.png" alt="" class="scenes_tit tit_end">
+				<p class="result_c">共连击<span>0</span>下</p>
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/scene_end.png" alt="" class="scene_end">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/jie_btn.png" alt="" class="jie_btn">
+				<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/again_btn.png" alt="" class="again_btn">
+	        </div>
+	    </div>
+    </div>
+    <!-- 填写信息 -->
+  <!--<div class="tian">
+    	<div class="tian_c">
+    		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/tian_btn.png" alt="" class="tian_btn">
+    	</div>
+    </div>-->
+    <!-- 填写表单 -->
+<!--<div class="message">
+    	<div class="message_bg">
+    		<ul>
+    			<li>
+    				<span>姓名</span>
+    				<input type="text" id="name">
+    			</li>
+    			<li>
+    				<span>电话</span>
+                                <input type="text" id="phone" >
+    			</li>
+    		</ul>
+    		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/ti_btn.png" alt="" class="ti_btn">
+    	</div>
+    </div>-->
+    <!-- 奖品 -->
+<!--<div class="jiang">
+    	<div class="jiang_c">
+    		 <img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/j1.png" alt="" class="jiang_img"> 
+    		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/muprize_btn.png" alt="" class="muprize_btn">
+    		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/share_btn2.png" alt="" class="share_btn share_btn2">
+    	</div>
+    </div>-->
+    <!-- 分享页 -->
+<!--<div class="share_bg">
+		<img src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/img/share_logo.png" alt="">
+	</div>-->
+</div>-->
+<script type="text/javascript" src="http://custom.hengdikeji.com/yajie_0308/Public/template/home/js/swiper.min.js"></script>
+<script type="text/javascript">
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.next1',
+        prevButton: '.prev1',
+        spaceBetween: 30
+    });
+</script>
+</body>
+</html>

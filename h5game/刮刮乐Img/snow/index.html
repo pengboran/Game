@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>HTML5 Canvas实现动态下雪效果_cnsecer.com</title>
+<link href="css/datouwang.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.let_it_snow.js"></script>
+<script>
+  $(document).ready( function() {
+	 $("canvas.flare").let_it_snow({
+	  windPower: 0,
+	  speed: 0,
+	  color: "#392F52",
+	  size:120,
+	  opacity: 0.00000001,
+	  count: 40,
+	  interaction: false
+	});
+	$("canvas.snow").let_it_snow({
+		  windPower: 3,
+		  speed: 1,
+		  count: 250,
+		  size: 0,
+	  });
+	  $("canvas.flake").let_it_snow({
+		  windPower: -3,
+		  speed: 1,
+		  count: 20,
+		  size: 10,
+		  image: "images/white-snowflake.png"
+	  });
+	  
+  });
+</script>
+</head>
+<body>
+<!-- 代码 开始 -->
+<canvas width="100%" height="100%" class="flare"></canvas>
+<canvas width="100%" height="100%" class="snow"></canvas>
+<canvas width="100%" height="100%" class="flake"></canvas>
+<!-- 代码 结束 -->
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+
+</body>
+</html>

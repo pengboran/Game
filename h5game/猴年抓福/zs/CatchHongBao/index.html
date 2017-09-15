@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大圣抓福</title><meta name="x-share-icon" content="http://i4.wanh5.com/item/1602/05/56b4075057b86_wx.jpg"><meta name="x-share-desc" content="2016福气手中来，快来获取我的祝福吧！" data-custom="2016福气手中来，快来获取我的祝福吧！"><meta name="x-share-title" content="2016福气手中来，快来获取我的祝福吧！" data-custom="2016福气手中来，快来获取我的祝福吧！"><meta name="x-share" content="http://mp.weixin.qq.com/s?__biz=MzAwODE2MzEwMQ==&mid=401916333&idx=1&sn=79036e09fc70df22ddff42ec6599541e#rd"><meta name="x-author" content="HW0029"><meta name="x-key" content="fa81c0b69e15db89a5c6a71b62dc9f14"><meta name="x-id" content="2103">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="full-screen" content="yes"/>
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true"/>
+<meta name="360-fullscreen" content="true"/>
+<style>
+        body, canvas, div {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        .footer{position:fixed;left:0px;bottom:10px;width:100%;text-align:center;font-size:12px;color: #FFFFFF}
+    </style>
+<script src="http://static.wanh5.com/js/wxhelper-1.0.3.js"></script>
+</head>
+<body style="padding:0; margin: 0; background: #000;">
+<canvas id="gameCanvas" width="800" height="450"></canvas>
+<script cocos src="game.min.js?v1.5"></script>
+<div class="footer" onclick="isclick()">QQ群439539</div>
+<script>
+    function setShare(str){
+        window['wxHelper'].update(
+                {
+                    desc: ""+str,
+                    title : "2016福气手中来，快来获取我的祝福吧!",
+                    img: 'http://'+location.host+'/zs/CatchHongBao/icon.png',
+                    link: 'http://mp.weixin.qq.com/s?__biz=MzAwODE2MzEwMQ==&mid=401916333&idx=1&sn=79036e09fc70df22ddff42ec6599541e#rd'
+                }
+        );
+    }
+
+    function NoToChinese(num) {
+        if (!/^\d*(\.\d*)?$/.test(num)) { alert("Number is wrong!"); return "Number is wrong!"; }
+        var AA = new Array("零", "一", "二", "三", "四", "五", "六", "七", "八", "九");
+        var BB = new Array("", "十", "百", "千", "万", "亿", "点", "");
+        var a = ("" + num).replace(/(^0*)/g, "").split("."), k = 0, re = "";
+        for (var i = a[0].length - 1; i >= 0; i--) {
+            switch (k) {
+                case 0: re = BB[7] + re; break;
+                case 4: if (!new RegExp("0{4}\\d{" + (a[0].length - i - 1) + "}$").test(a[0]))
+                    re = BB[4] + re; break;
+                case 8: re = BB[5] + re; BB[7] = BB[5]; k = 0; break;
+            }
+            if (k % 4 == 2 && a[0].charAt(i + 2) != 0 && a[0].charAt(i + 1) == 0) re = AA[0] + re;
+            if (a[0].charAt(i) != 0) re = AA[a[0].charAt(i)] + BB[k % 4] + re; k++;
+        }
+        if (a.length > 1)
+        {
+            re += BB[6];
+            for (var i = 0; i < a[1].length; i++) re += AA[a[1].charAt(i)];
+        }
+        return re;
+    }
+
+    setShare('2016福气手中来，快来获取我的祝福吧!');
+</script>
+<script>
+    function isclick(){
+        window.location.href = 'http://www.fangtop1.com';
+    }
+    function isAndroid()
+    {
+        var ua = window.navigator.userAgent.toLowerCase();
+        var nav = window.navigator;
+        return ua.match(/android/i) || nav.platform.match(/android/i) ?true : false ;
+    }
+</script>
+</body>
+</html>
