@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>两小有猜</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <!--微信分享的相关内容 开始-->
+    <!--微信分享的相关内容 结束-->
+</head>
+<body>
+<div id="game" class="abs full game"></div>
+<div class="abs full share-page" id="sharePage">
+    <img src="http://mat1.gtimg.com/zj/maxbao/cd_day/imgs/share-now.png" class="abs p-share">
+</div>
+<div id="loading" class="abs full loading-page">
+    <div class="abs loading-progress">0%</div>
+</div>
+
+<!--<script charset="utf-8" src="http://mat1.gtimg.com/zj/maxbao/aoc_game/dist/phaser.min.js" ></script>-->
+<script charset="utf-8" src="js/phaser.js" ></script>
+<script src="js/dragonBones.js"></script>
+<script src="js/phaserBones.js"></script>
+<script charset="utf-8"  src="js/game.ff.js" ></script>
+
+<script>
+    function onShareComplete(res) {
+        //window.location.href='';
+    }
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+        WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+            WeixinJSBridge.invoke('sendAppMessage', {
+                "img_url": window.shareData.imgUrl,
+                "link": window.shareData.timeLineLink,
+                "desc": window.shareData.tContent,
+                "title": window.shareData.tTitle
+            }, onShareComplete);
+        });
+        WeixinJSBridge.on('menu:share:timeline', function(argv) {
+            WeixinJSBridge.invoke('shareTimeline', {
+                "img_url": window.shareData.imgUrl,
+                "img_width": "320",
+                "img_height": "320",
+                "link": window.shareData.timeLineLink,
+                "desc": window.shareData.tContent,
+                "title": window.shareData.tTitle
+            }, onShareComplete);
+        });
+    }, false);
+    if(window.TencentNews && window.TencentNews.setShareArticleInfo){
+        window.TencentNews.setShareArticleInfo(
+            window.shareData.tTitle,
+            window.shareData.tContent,
+            window.shareData.timeLineLink,
+            window.shareData.imgUrl
+        );
+    }
+</script>
+
+</body>
+</html>
+

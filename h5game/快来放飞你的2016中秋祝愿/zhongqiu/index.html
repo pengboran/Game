@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no"/>
+    <title>快来放飞你的2015中秋祝福</title>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div id="main">
+    <!--<img id="wx" src="images/share.png"/>-->
+
+    <div id="container"></div>
+
+    <img id="txt1" src="images/txt1.png"/>
+    <img id="txt2" src="images/txt2.png"/>
+    <img id="txt3" src="images/txt3.png"/>
+    <img id="txt4" src="images/txt4.png"/>
+    <img id="txt5" src="images/txt5.png"/>
+    <img id="btnShare" src="images/btnShare.png"/>
+    <img id="btnShare2" src="images/btnShare2.png"/>
+
+    <img id="title" src="images/title.png"/>
+    <div id="loading">
+        <div class="bg"></div>
+        <img class="pic" src="images/loading/firecrackers.gif"/>
+        <div class="txt"></div>
+    </div>
+
+    <div id="no">
+        <!--<img class="bg" src="images/no/bg.jpg"/>-->
+        <!--<img class="light" src="images/no/light.png"/>-->
+        <!--<img class="txt" src="images/no/txt.png"/>-->
+    </div>
+
+    <div id="share">
+        <div class="bg"></div>
+        <img class="txt1" src="images/share/txt1(1).png"/>
+        <img class="txt2" src="images/share/txt2(1).png"/>
+    </div>
+
+    <img id="muteOn" src="images/muteOn.png"/>
+    <img id="muteOff" src="images/muteOff.png"/>
+    <img id="logo" src="images/logo.png"/>
+
+    <canvas id="canvas" width="768" height="768"></canvas>
+    <audio id="bgm" src="sounds/bgm.mp3" autoplay="autoplay" loop="loop">
+    </audio>
+</div>
+
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/three.min.js"></script>
+<!--<script type="text/javascript" src="js/renderers/Projector.js"></script>-->
+<!--<script type="text/javascript" src="js/renderers/CanvasRenderer.js"></script>-->
+<script type="text/javascript" src="js/loaders/OBJLoader.js"></script>
+<!--<script type="text/javascript" src="js/stats.min.js"></script>-->
+<script type="text/javascript" src="js/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/plugins/CSSPlugin.min.js"></script>
+<!--<script type="text/javascript" src="js/snabbt.min.js"></script>-->
+<!--<script type="text/javascript" src="js/modernizr.custom.34097.js"></script>-->
+<script type="text/javascript" src="js/ua-parser.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+
+<script>
+    var imgUrl = 'http://img1.wushang.com/img/2017/answer/cover.jpg';
+    var lineLink = 'zhongqiu/index.html'  ;
+    var descContent = '明月之夜寄相思，千里之外送真情，漂泊在外的你快来放飞中秋节祝福天灯吧！';
+    var shareTitle = '快来放飞你的2016中秋祝福';
+    var appid = '';
+    function shareFriend() {
+        WeixinJSBridge.invoke( 'sendAppMessage', {
+            "appid": appid,
+            "img_url": imgUrl,
+            "img_width": "640" ,
+            "img_height": "640" ,
+            "link": lineLink,
+            "desc": descContent,
+            "title": shareTitle
+        }, function (res) {
+            _report( 'send_msg', res.err_msg);
+        })
+    }
+    function shareTimeline() {
+        WeixinJSBridge.invoke( 'shareTimeline', {
+            "img_url": imgUrl,
+            "img_width": "640" ,
+            "img_height": "640" ,
+            "link": lineLink,
+            "desc": descContent,
+            "title": shareTitle
+        }, function (res) {
+            _report( 'timeline', res.err_msg);
+        });
+    }
+    function shareWeibo() {
+        WeixinJSBridge.invoke( 'shareWeibo', {
+            "content": descContent,
+            "url": lineLink,
+        }, function (res) {
+            _report( 'weibo', res.err_msg);
+        });
+    }
+    // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+    document.addEventListener( 'WeixinJSBridgeReady', function onBridgeReady() {
+        // 发送给好友
+        WeixinJSBridge.on( 'menu:share:appmessage', function (argv) {
+            shareFriend();
+        });
+         //分享到朋友圈
+        WeixinJSBridge.on( 'menu:share:timeline', function (argv) {
+            shareTimeline();
+        });
+        // 分享到微博
+        WeixinJSBridge.on( 'menu:share:weibo', function (argv) {
+            shareWeibo();
+        });
+    }, false);
+</script>
+
+<script type="text/javascript">
+    var amObj = {
+        title:"快来放飞你的2016中秋祝福",
+        desc:"明月之夜寄相思，千里之外送真情，漂泊在外的你快来放飞中秋节祝福天灯吧！",
+        link:"zhongqiu/index.html",
+        imgUrl:"images/s.png"
+    }
+
+    var tlObj = {
+        title:"快来放飞你的2016中秋祝福",
+        desc:"明月之夜寄相思，千里之外送真情，漂泊在外的你快来放飞中秋节祝福天灯吧！",
+        link:"zhongqiu/index.html",
+        imgUrl:"images/s.png"
+    }
+</script>
+<!-- <iframe src="http://ln.qq.com/zt2015/zqh5/index.htm" frameborder="0"></iframe> -->
+
+</body>
+</html>
+<!--[if !IE]>|xGv00|b4a64f22c71ec6bcc8985e26b2636fc2<![endif]-->

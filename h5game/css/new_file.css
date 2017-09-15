@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, header, form, fieldset, input, textarea, p, blockquote, th, td,img {
+    padding: 0;
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+body {font-family:"Microsoft YaHei", Arial, Helvetica, sans-serif;font-size: 14px;}
+a, a:hover {
+    text-decoration: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+@keyframes play {
+    100%{
+        background-position: -737px -2px;
+    }
+}
+@-webkit-keyframes play {
+    100%{
+        background-position: -737px -2px;
+    }
+}
+.sprite {
+    width:145px;
+    height:300px;
+    display:inline-block;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-image:url("../img/234.png");
+    background-position: -10px -10px;
+    animation: play 0.8s steps(5) infinite;
+    -webkit-animation: play 0.8s steps(5) infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.bg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+    margin: 0 auto;
+}
+.bg img{
+	  position: absolute;
+	  top: 0;
+	  left: -20%;
+	  height: 100%;
+
+}
+.do {
+    background: url("../img/button.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 15%;
+    	max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #666;
+}
+
+.cover {
+    background: url("../img/share.png") top right no-repeat;
+    background-size: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.decode .inner {
+    width: 100%;
+    height: 100%;
+    background: url("../img/decode.png") center no-repeat;
+    background-size: 80%;
+}
+.title{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 15%;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #ef737f;
+    color: #FFFFFF;
+    line-height: 30px;
+    text-align: center;
+}
+.hint{
+    color:  #ef737f;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom:11%;
+    font-size: 14px;
+
+}
+.draw_text{
+    position: relative;
+}
+.draw_text img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,0);
+}
+.ok{
+	width: 120px;
+	height: 25px;
+    position: absolute;
+    left: 35%;
+    bottom:1%;
+    color:#ef737f;
+    z-index: 9999;
+    font-size: 14px;
+    border-radius: 8px;
+    background: #ef737f;
+    color: #FFFFFF;
+    line-height: 25px;
+    text-align: center;
+    
+}

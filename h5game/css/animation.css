@@ -1,0 +1,17 @@
+
+		@-webkit-keyframes play{
+			100%{
+				background-position: -960px -0px;
+			}
+		}
+		.box_img{
+	width:200px;
+    height:300px;
+    display:inline-block;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-image:url("../img/000.jpg");
+    background-position: -10px -10px;
+    animation: play 0.8s steps(5) infinite;
+    -webkit-animation: play 0.8s steps(5) infinite;
+			}	

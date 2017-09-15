@@ -1,0 +1,521 @@
+@charset "utf-8";
+body,
+html {
+	overflow: hidden
+}
+
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+	margin: 0;
+	padding: 0;
+	outline: 0
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'microsoft yahei', sans-serif, Sans-Serif
+}
+
+body,
+div,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+p {
+	-webkit-text-size-adjust: none
+}
+
+input,
+select,
+textarea {
+	font-size: 100%
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+a img,
+fieldset,
+img {
+	border: 0
+}
+
+iframe {
+	display: block
+}
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal
+}
+
+del {
+	text-decoration: line-through
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+	font-style: normal;
+	font-weight: 500
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+caption,
+th {
+	text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: 500
+}
+
+.close-pop,
+.pop-title {
+	text-align: center;
+	font-weight: 700
+}
+
+q:after,
+q:before {
+	content: ''
+}
+
+sup {
+	vertical-align: text-top
+}
+
+sub {
+	vertical-align: text-bottom
+}
+
+em {
+	font-style: normal
+}
+
+a,
+ins {
+	text-decoration: none
+}
+
+a,
+input {
+	-webkit-tap-highlight-color: transparent
+}
+
+a {
+	-webkit-touch-callout: none
+}
+
+.fn-clear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+.fn-hide {
+	display: none
+}
+
+.fn-left,
+.fn-right {
+	display: inline
+}
+
+.fn-left {
+	float: left
+}
+
+.fn-right {
+	float: right
+}
+
+::-webkit-scrollbar {
+	display: none
+}
+
+::-webkit-scrollbar-button:vertical {
+	display: none
+}
+
+::-webkit-scrollbar-button:end:increment,
+::-webkit-scrollbar-button:start:decrement {
+	display: none
+}
+
+::-webkit-scrollbar-button:vertical:end:decrement,
+::-webkit-scrollbar-button:vertical:start:increment {
+	display: none
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+	display: none
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+	display: none
+}
+
+::-webkit-scrollbar-track:vertical {
+	background-color: #ABACAB
+}
+
+::-webkit-scrollbar-track-piece {
+	background: #fff
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 50px;
+	background-color: #ABACAB;
+	-webkit-border-radius: 5px
+}
+
+.full,
+body,
+html {
+	height: 100%;
+	width: 100%
+}
+
+::-webkit-scrollbar-corner:vertical {
+	background-color: #ABACAB
+}
+
+html {
+	font-size: 18px
+}
+
+body {
+	-webkit-backface-visibility: hidden;
+	background: #000;
+	position: absolute;
+	z-index: 0
+}
+
+a,
+a:active {
+	color: inherit
+}
+
+.base-img {
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: 10
+}
+
+.full {
+	top: 0;
+	left: 0
+}
+
+.abs {
+	position: absolute;
+	display: block
+}
+
+.load-bg {
+	background-color: #000;
+	z-index: 200;
+	opacity: 0;
+	transition: opacity .5s ease;
+	-webkit-transition: opacity .5s ease
+}
+
+.loading {
+	opacity: 1;
+	z-index: 1000
+}
+
+.loading-page {
+	background-color: #344335
+}
+
+.loading-progress {
+	text-align: center;
+	font-size: 1rem;
+	color: #fff;
+	height: 2rem;
+	line-height: 2rem;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -1rem
+}
+
+.pop-layer {
+	display: none;
+	background-color: rgba(0, 0, 0, .8)
+}
+
+.pop-box {
+	width: 80%;
+	height: 80%;
+	background-color: rgba(0, 0, 0, .9);
+	top: 10%;
+	left: 10%;
+	border-radius: .5rem;
+	box-sizing: border-box
+}
+
+.close-pop {
+	display: block;
+	background: url(http://mat1.gtimg.com/zj/maxbao/aoc/imgs/close-it.png) 50% 50% no-repeat #d7d7d7;
+	background-size: 50%;
+	width: 2.8rem;
+	height: 2.8rem;
+	top: 0;
+	right: 0;
+	border-radius: 1.4rem;
+	font-size: 2.4rem;
+	line-height: 2.4rem
+}
+
+.pop-inner {
+	color: #fff;
+	top: 1rem;
+	left: 1rem;
+	right: 1rem;
+	bottom: 1rem;
+	overflow: scroll;
+	display: none
+}
+
+.curr-inner {
+	display: block
+}
+
+.pop-title {
+	font-size: 1.5rem;
+	margin: 1rem 0
+}
+
+.pop-words {
+	text-indent: 1.5rem;
+	text-align: justify;
+	font-size: 1.1rem;
+	line-height: 1.6rem;
+	margin-bottom: .4rem
+}
+
+.score-number,
+.video-words {
+	font-weight: 700;
+	text-align: center
+}
+
+.rule-box {
+	width: 70%;
+	top: 15%;
+	left: 15%
+}
+
+.start-btn {
+	width: 60%;
+	height: 2rem;
+	bottom: 8%;
+	left: 20%;
+	background-color: #00fff0;
+	z-index: 100;
+	opacity: 0
+}
+
+.over-page {
+	background: url(http://mat1.gtimg.com/zj/maxbao/tank_car_game/imgs/over-bg.png) 50% 100% no-repeat;
+	background-size: cover;
+	display: none
+}
+
+.video-box {
+	width: 320px;
+	height: 180px;
+	background-color: #000;
+	top: 5%;
+	left: 50%;
+	position: relative;
+	margin-left: -160px
+}
+
+.audio,
+.pause,
+.pause span {
+	position: absolute
+}
+
+.video-words {
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.8rem;
+	font-size: 1.2rem;
+	color: #1e750b;
+	bottom: -1.8rem;
+	left: 0
+}
+
+.score-box {
+	width: 70%;
+	margin: 4.5rem 0 0 15%
+}
+
+.score-number {
+	width: 20%;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	color: red;
+	bottom: 2%;
+	left: 50%;
+	font-size: 1.5rem
+}
+
+.o-btn {
+	width: 30%;
+	left: 35%
+}
+
+.again-btn {
+	bottom: 30%
+}
+
+.share-btn {
+	bottom: 20%
+}
+
+.share-page {
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+	z-index: 500
+}
+
+.p-share {
+	width: 70%;
+	right: 0;
+	top: 2%
+}
+
+.pause {
+	z-index: 10000;
+	top: 60px;
+	right: 10px
+}
+
+.pause a {
+	width: 40px;
+	height: 40px;
+	background: url(http://mat1.gtimg.com/zj/maxbao/vds/images/music.png) no-repeat;
+	background-size: 40px 40px;
+	display: block
+}
+
+.pause a.on {
+	-webkit-animation: reverseRotataZ 1.2s linear infinite
+}
+
+.pause span {
+	color: #fff;
+	font-size: 16px;
+	left: -40px;
+	top: 5px;
+	text-shadow: 1px 1px 1px #000;
+	letter-spacing: 2px;
+	-webkit-transition: all .2s linear;
+	opacity: 0;
+	-webkit-transform: translateX(-20px)
+}
+
+.pause span.z-show {
+	opacity: 1;
+	-webkit-transform: translateX(0)
+}
+
+.coffee-steam-box {
+	-webkit-transform: translate(-40px, -40px)
+}
+
+@-webkit-keyframes reverseRotataZ {
+	0% {
+		-webkit-transform: rotateZ(0)
+	}
+	100% {
+		-webkit-transform: rotateZ(-360deg)
+	}
+}
+
+.audio {
+	z-index: 10;
+	visibility: hidden;
+	opacity: 0;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 30px
+}
+
+@media screen and (max-width:320px) {
+	html {
+		font-size: 12px
+	}
+}
+
+@media screen and (min-width:375px) {
+	html {
+		font-size: 16px
+	}
+}
+
+
+/*  |xGv00|5a707de5ea816b8e9eb32b0740f96834 */

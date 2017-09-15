@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>奔跑吧兔子</title>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.01, minimal-ui" />
+	<style>
+		body {
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			background: url("images/bg.jpg");
+		}	
+
+		canvas {	
+			-ms-touch-action: none;
+			image-rendering: -o-crisp-edges;           
+			image-rendering: optimize-contrast;        
+			-ms-interpolation-mode: nearest-neighbor;  
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			-moz-tap-highlight-color: rgba(0,0,0,0);
+			tap-highlight-color: rgba(0,0,0,0);
+			user-select: none;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+		} 
+		#toolbar{
+		position:absolute;
+		left:0px;
+		top:1%;
+		width:100%;
+		text-align:center;
+		z-index:99;
+		display:none;
+	}
+	#toolbar img{
+		width:40%;
+	}
+	#game9g9gstart{
+		top:12%;
+	}
+	</style>
+	
+	<script src="viewporter.js"></script>
+	<script>document.domain = '4399.com';</script>
+</head>
+	
+	<body> 
+		<div id="toolbar">
+			
+		</div>
+		<div id="viewporter">
+		   <canvas id="canvas" moz-opaque></canvas>
+		</div>
+	</body>
+    <script type="text/javascript">
+	  function launchFullscreen(element) {
+		  element.style.backgroundImage = "url('images/bg.jpg')"
+		  if(element.requestFullscreen) {
+			element.requestFullscreen();
+		  } else if(element.mozRequestFullScreen) {
+			element.mozRequestFullScreen();
+		  } else if(element.webkitRequestFullscreen) {
+			element.webkitRequestFullscreen();
+		  } else if(element.msRequestFullscreen) {
+			element.msRequestFullscreen();
+		  }
+		}
+	</script>
+	<script src="TweenMax.min.js"></script>
+	<script src="howler.js"></script>
+	<script src="VisibilityManager.js"></script>
+	<script src="app.js"></script>
+	<script>
+	
+	function goHome(){
+		
+	}
+	function clickMore(){
+	try{parent.moregame();}catch(e){}
+	}
+	function dp_share(){
+		
+	}
+	function dp_Ranking(){
+	
+	}
+	function showAd(){
+	}
+	function hideAd(){
+	}
+	function dp_submitScore(score){
+		
+	}
+	function updateShare(bestScore) {
+		var shareTitle = "";
+		switch(true){
+			case bestScore > 20000 :
+				shareTitle = "我跑了" + bestScore + "米，跑到人生巅峰，已载入史册！";
+				break;
+			case bestScore > 10000 :
+				shareTitle = "我跑了" + bestScore + "米，跑出了自己的风格！";
+				break;
+			case bestScore > 5000 :
+				shareTitle = "我跑了" + bestScore + "米，请问终点在哪里？";
+				break;
+			case bestScore > 0 :
+				shareTitle = "我跑了" + bestScore + "米，手一抖就撞墙了！不要问我头疼不疼！";
+				break;
+			default: shareTitle = "没事儿我就出来跑一跑，求个偶遇，缘分这种事谁说得清呢？";
+		}
+		return shareTitle;
+	}
+</script>
+<div style="display: none;">
+	<script type="text/javascript">
+		game9g.utils.tongji();
+	</script>
+</div>
+
+</html>

@@ -1,0 +1,266 @@
+*{
+	border: 0;
+	margin: 0;
+	overflow: hidden;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.page1{
+	
+	width: 100%;
+	height: 100%;
+}
+
+
+.bg1{
+	width: 100%;
+	height: 100%;
+	background: url(../image/p0-1.jpg) no-repeat center center;
+	background-size:cover ;
+}
+.dialog1{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	opacity: 0.65;
+	background-color: #000000;
+	width: 100%;
+	height: 100%;
+	
+}
+.d1_img{
+	position: absolute;
+	top:30vh;
+	left: 20vw;
+	z-index: 300;
+	height: 20vh;
+	width: 60vw;
+	border-radius:18px ;
+}
+.show{
+	display: none;
+}
+
+
+.page2{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.page2>.bg2{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: #000000;
+    opacity: 0.6;
+    
+}
+.silder_bg{
+	width: 78vw;
+	height: 10vh;
+	position: absolute;
+	top:5vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index:200;
+	background-color: #F2F2F2;
+	border-radius: 6vh;
+	
+}
+
+
+
+ .p2_bg1{
+	width: 10vh;
+	height: 10vh;
+	position: absolute;
+	top:0;
+	left: 20vw;
+	right: 0;
+	z-index:400;
+	animation: light 3s linear infinite;
+	-webkit-animation:light 3s linear infinite;
+}
+/*滑动css3动画*/
+@keyframes light{
+	from{left:12vw;}
+	to{left:60vw ;}
+}
+@-webkit-keyframes light{
+	from{left:10vw;opacity: 0.4;}
+	to{left:55vw ;opacity: 0.4;}
+}
+
+
+ .p2_bg2{
+	width: 10vh;
+	height: 10vh;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	z-index:200;
+	
+}
+.silder_bg span{
+	width: 78vw;
+	height: 5vh;
+	position: absolute;
+	top:3vh;
+	left: 4vw;
+	right: 0;
+	
+	z-index:200;
+	font-family: "微软雅黑";
+	font-size:14px ;
+	text-align: center;
+}
+
+
+
+.p2_cancle{
+	position: absolute;
+	bottom: 9vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 500;
+	height: 25vw;
+	width: 20vw;
+	background: url(../image/cancle.png) no-repeat center center;
+	background-size:100%  100%;
+}
+
+.page3{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	
+}
+
+.p3_bg1{
+	display: none;
+}
+.p3_img1{
+	position: absolute;
+	top: 25vh;
+	left: 5vw;
+	right: 0;
+	margin: 0 auto;
+	
+}
+.p3_img2 {
+	width: 30vw;
+	position: absolute;
+	top: 35vh;
+	left: 10vw;
+	right: 0;
+	margin: 0 auto;
+	
+}
+
+.p3s1 ,.p3s2{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	display: none;
+}
+.p3s1{
+	position: absolute;
+	top:30vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+
+}
+.p3s2{
+	position: absolute;
+	top:36vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	
+}
+.p3_cicle{
+	position: absolute;
+	top:29vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-color: white;
+	height: 5vw;
+	width: 5vw;
+	border-radius: 50%;
+	opacity: 0.2;
+	box-shadow: 0 0 5vw 5vw  white;
+	-webkit-box-shadow: 0 0 5vw 5vw  white;
+	animation: whitelight 4s  2  ease-in-out alternate;
+	-webkit-animation: whitelight 4s  2 ease-in-out alternate ;
+	
+}
+/*点亮css3动画*/
+@-webkit-keyframes whitelight{
+	0%{transform: scale(1,1);opacity: 0.2;}
+	50%{transform: scale(1.5,1.5);opacity: 0.35;}
+	100%{transform: scale(1,1);opacity: 0.2;}
+}
+
+.page4{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.p4_2,.p4_3,.p4_4,.p4_5{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.star_rain{
+	position: absolute;
+	top :6vh;
+	left: 25vw;
+	width: 2px;
+	height: 2px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	box-shadow: 0 0 3px 3px #FFFFFF;
+	z-index: 2000;
+}
+.star_rain:after{
+	content: '';
+	top: 0;
+	left: 4px;
+	border: 0px solid #FFFFFF;
+	border-width:2px 90px 2px 90px ;
+	border-color: transparent transparent transparent #FFFFFF;  
+}
+.p4_1{ 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	animation: moonmove 10s 1 linear forwards;
+	-webkit-animation: moonmove 10s 1 linear forwards;
+	
+}
+@-webkit-keyframes moonmove{
+	0%{-webkit-transform: translate3d(0,0,0);}
+	100%{-webkit-transform: translate3d(-50px,0,0);}
+	
+}
