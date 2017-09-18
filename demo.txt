@@ -7,3 +7,4 @@ wo buzhidao
 hello ok demo
 
 you are is sb   l  like  git 
+function
