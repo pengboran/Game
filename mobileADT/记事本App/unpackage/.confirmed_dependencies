@@ -1,0 +1,26 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/mui.min.js",
+      "js/zepto.min.js",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "lock.html"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "lock.html": {
+    "href": "lock.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "js/mui.locker.js"
+    ],
+    "refer": [
+      "index.html"
+    ],
+    "priority": 0
+  }
+}

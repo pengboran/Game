@@ -1,0 +1,147 @@
+/*公共*********************************************************/
+/*分隔线*/
+.interval {
+	height: 10px;
+	background-color: #eee;
+}
+
+/*顶部titlebar**********************************************/
+.x-titlebar {
+	background-color: #666;
+}
+
+.x-titlebar .x-titlebar-title {
+	padding: 0px;
+}
+
+.x-titlebar .x-titlebar-title .seach {
+	width: 80%;
+	border-radius: 0px 0px 5px 5px;
+	border: none;
+	background: none;
+	box-shadow: none;
+	border-bottom: 1px solid #fff;
+}
+
+.x-titlebar .x-titlebar-title .seach-btn {
+	width: 20%;
+	padding-top: 15px;
+}
+
+.x-titlebar .btn {
+	padding: 0;
+	margin: 0;
+}
+
+.x-titlebar .btn>span {
+	font-size: 10px;
+	line-height: 1;
+}
+
+/*内容部分*****************************************************/
+/*图片轮换*/
+.x-carousel .x-contents>.x-contents-content {
+	overflow: hidden;
+}
+
+.margin {
+	margin-top: 10px;
+	clear: both;
+}
+
+.margin .col {
+	margin-bottom: 10px;
+}
+
+/*快捷目录*/
+.grid {
+	margin: 0;
+	padding: 0;
+}
+
+.grid .cell img {
+	display: block;
+	margin: 0 auto;
+}
+
+.grid .cell {
+	width: 20%;
+	padding: 0;
+	text-align: center;
+}
+
+/*底部********************************************************/
+.x-panel-bottom .btn-group .btn {
+	color: #666;
+	padding: 0;
+	padding-top: 3px;
+}
+
+.x-panel-bottom .btn-group .btn-on {
+	color: #3CAF36;
+}
+
+.x-panel-bottom .btn-group .btn .icon {
+	font-size: 22px;
+}
+
+td {
+	background-color: #fff;
+	font-family: "Comic Sans MS", cursive;
+}
+
+hr {
+	color: #000;
+}
+
+/** Alert DIV**/
+#panel {
+	z-index:1000; 
+	padding: 0px;
+	text-align: right;
+	position: absolute;
+	top: 1px;
+	right: 0px;
+	width: 100px;
+	height: 130px;
+}
+
+#panel {
+	display: none;
+				
+	/**div 字体居中**/
+	text-align:center;
+	
+	line-height:30px
+	
+}
+
+/**affter**/
+		
+			/* button alert */
+			.tip-bubble {
+			  position: relative;
+			  background-color: #202020;
+			  width: 100px;
+			  padding: 0px;
+			  color: #CCC;
+			  text-align: center;
+			  border-radius: 1px;
+			  margin: 1px;
+			  border: 1px solid #111;
+			  box-shadow: 1px 1px 2px #202020;
+			  -moz-box-shadow: 1px 1px 2px #202020;
+			  -webkit-border-shadow: 1px 1px 2px #202020;
+			  text-shadow: 0px 0px 15px #fff;
+			}
+			 
+		
+			 
+			/* Position the Arrow */
+			.tip-bubble-top:after {
+			  border-bottom-color: #202020;
+			  right: 5px;
+			  bottom: 100%;
+			}
+
+

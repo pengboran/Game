@@ -1,0 +1,154 @@
+-- --------------------------------------------------------
+-- 主机:                           127.0.0.1
+-- 服务器版本:                        5.6.26 - MySQL Community Server (GPL)
+-- 服务器操作系统:                      Win32
+-- HeidiSQL 版本:                  9.3.0.4984
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- 导出 prize 的数据库结构
+CREATE DATABASE IF NOT EXISTS `prize` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `prize`;
+
+
+-- 导出  表 prize.answer 结构
+CREATE TABLE IF NOT EXISTS `answer` (
+  `fID` varchar(50) NOT NULL,
+  `fUserID` varchar(50) DEFAULT NULL,
+  `fQuestionID` varchar(50) DEFAULT NULL,
+  `fOptionID` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`fID`),
+  UNIQUE KEY `fUserID_fQuestionID_fOptionID` (`fUserID`,`fQuestionID`,`fOptionID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 正在导出表  prize.answer 的数据：~2 rows (大约)
+/*!40000 ALTER TABLE `answer` DISABLE KEYS */;
+/*!40000 ALTER TABLE `answer` ENABLE KEYS */;
+
+
+-- 导出  表 prize.options 结构
+CREATE TABLE IF NOT EXISTS `options` (
+  `fID` varchar(50) NOT NULL,
+  `fQuestionID` varchar(50) DEFAULT NULL,
+  `fName` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`fID`),
+  UNIQUE KEY `fQuestionID_fName` (`fQuestionID`,`fName`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 正在导出表  prize.options 的数据：~35 rows (大约)
+/*!40000 ALTER TABLE `options` DISABLE KEYS */;
+INSERT INTO `options` (`fID`, `fQuestionID`, `fName`) VALUES
+	('2016052900103', '20160529001', '我从广东之外赶过来的'),
+	('2016052900101', '20160529001', '我就是深圳的'),
+	('2016052900102', '20160529001', '我来自广东其他城市，不在深圳'),
+	('2016052900201', '20160529002', '不是，看到这次活动信息之前已对WeX5有了解'),
+	('2016052900202', '20160529002', '是的，这次活动信息让我第一次知道WeX5'),
+	('2016052900301', '20160529003', '不是，看到这次活动信息之前已对JPush有了解'),
+	('2016052900302', '20160529003', '是的，这次活动信息让我第一次知道JPush'),
+	('2016052900401', '20160529004', '做过'),
+	('2016052900402', '20160529004', '没做过'),
+	('2016052900503', '20160529005', '1~3年'),
+	('2016052900504', '20160529005', '3~5年'),
+	('2016052900505', '20160529005', '5年以上'),
+	('2016052900502', '20160529005', '不到1年'),
+	('2016052900501', '20160529005', '无'),
+	('2016052900601', '20160529006', '互联网企业'),
+	('2016052900602', '20160529006', '传统软件企业'),
+	('2016052900606', '20160529006', '其他'),
+	('2016052900604', '20160529006', '创业公司'),
+	('2016052900605', '20160529006', '我是个体，暂无单位'),
+	('2016052900603', '20160529006', '非软件企业（政府、制造、金融......）'),
+	('2016052900707', '20160529007', '主办方的微信号/官网'),
+	('2016052900710', '20160529007', '其他渠道'),
+	('2016052900701', '20160529007', '各种开发者社区（如开源中国、CSDN等）'),
+	('2016052900704', '20160529007', '各种微信群/QQ群'),
+	('2016052900706', '20160529007', '媒体新闻'),
+	('2016052900709', '20160529007', '搜索引擎'),
+	('2016052900708', '20160529007', '朋友之间的聊天'),
+	('2016052900703', '20160529007', '朋友圈里的转发'),
+	('2016052900702', '20160529007', '网上的各种活动平台（如活动行、会鸽等）'),
+	('2016052900705', '20160529007', '邮件通知'),
+	('2016052900805', '20160529008', '其他'),
+	('2016052900801', '20160529008', '学习技术'),
+	('2016052900803', '20160529008', '寻求合作'),
+	('2016052900804', '20160529008', '就是感兴趣，无明确目的'),
+	('2016052900802', '20160529008', '有疑问需要寻求解答');
+/*!40000 ALTER TABLE `options` ENABLE KEYS */;
+
+
+-- 导出  表 prize.prize 结构
+CREATE TABLE IF NOT EXISTS `prize` (
+  `fID` varchar(50) NOT NULL,
+  `fBatch` varchar(50) DEFAULT NULL,
+  `fIndex` int(11) DEFAULT NULL,
+  `fName` varchar(50) DEFAULT NULL,
+  `fTotal` int(10) DEFAULT NULL,
+  `fCount` int(11) DEFAULT NULL,
+  PRIMARY KEY (`fID`),
+  UNIQUE KEY `fBatch_fIndex_fName` (`fBatch`,`fIndex`,`fName`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 正在导出表  prize.prize 的数据：~5 rows (大约)
+/*!40000 ALTER TABLE `prize` DISABLE KEYS */;
+INSERT INTO `prize` (`fID`, `fBatch`, `fIndex`, `fName`, `fTotal`, `fCount`) VALUES
+	('201605290101', '20160529', 1, 'JPush笔记本', 10, 0),
+	('201605290102', '20160529', 1, '鼠标垫', 10, 0),
+	('201605290201', '20160529', 2, '笔记本', 20, 0),
+	('201605290202', '20160529', 2, '鼠标垫', 20, 0),
+	('201605290203', '20160529', 2, 'T恤衫', 20, 0);
+/*!40000 ALTER TABLE `prize` ENABLE KEYS */;
+
+
+-- 导出  表 prize.question 结构
+CREATE TABLE IF NOT EXISTS `question` (
+  `fID` varchar(50) NOT NULL,
+  `fBatch` varchar(50) DEFAULT NULL,
+  `fName` varchar(50) DEFAULT NULL,
+  `fType` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`fID`),
+  UNIQUE KEY `fBatch_fName` (`fBatch`,`fName`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 正在导出表  prize.question 的数据：~8 rows (大约)
+/*!40000 ALTER TABLE `question` DISABLE KEYS */;
+INSERT INTO `question` (`fID`, `fBatch`, `fName`, `fType`) VALUES
+	('20160529001', '20160529', '(1/8)您是从哪里来参加本次开发者活动的？', '单选'),
+	('20160529002', '20160529', '(2/8)你是首次接触到WeX5吗？', '单选'),
+	('20160529003', '201605291', '(3/8)你是首次接触到JPush吗？', '单选'),
+	('20160529004', '201605291', '(4/8)你是否基于腾讯X5浏览器做过开发？', '单选'),
+	('20160529005', '201605291', '(5/8)你有多少年的编程经验？', '单选'),
+	('20160529006', '201605291', '(6/8)你目前所在单位属于什么性质？', '多选'),
+	('20160529007', '201605291', '(7/8)你主要从哪些渠道获取开发者相关的活动信息？', '多选'),
+	('20160529008', '201605291', '(8/8)你参加本次活动的目的是：', '多选');
+/*!40000 ALTER TABLE `question` ENABLE KEYS */;
+
+
+-- 导出  表 prize.user 结构
+CREATE TABLE IF NOT EXISTS `user` (
+  `fID` varchar(50) NOT NULL,
+  `fBatch` varchar(50) DEFAULT NULL,
+  `fWeixinID` varchar(50) DEFAULT NULL,
+  `fName` varchar(50) DEFAULT NULL,
+  `fPhone` varchar(50) DEFAULT NULL,
+  `fCompany` varchar(50) DEFAULT NULL,
+  `fEmail` varchar(50) DEFAULT NULL,
+  `fPrize1` varchar(50) DEFAULT NULL,
+  `fPrize2` varchar(50) DEFAULT NULL,
+  `fPrize3` varchar(50) DEFAULT NULL,
+  `fAwardFlag` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`fID`),
+  UNIQUE KEY `fBatch_fWeixinID` (`fBatch`,`fWeixinID`),
+  KEY `fPhone` (`fPhone`),
+  KEY `fName` (`fName`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 正在导出表  prize.user 的数据：~0 rows (大约)
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

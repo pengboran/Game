@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cEFbmUb" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEFbmUb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/select/checkboxGroup,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cEFbmUb" class="cEFbmUb"/>  
+  <div xmlns="" xid="div5" style="position:absolute; width:100%; height:100%; z-index:-1" __cid="cEFbmUb" class="cEFbmUb"> 
+    <img src="@justepContextPath@/v_19b213894af44f118472de3133b67669l_zh_CNs_d_m/prize/img/background.png" alt="" xid="image2" style="width:100%;" height="100%" __cid="cEFbmUb" class="cEFbmUb"/> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pef07defe99044609ba740d957ec59cba-iosstatusbar cEFbmUb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEFbmUb"> 
+    <div class="x-panel-top cEFbmUb" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEFbmUb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cEFbmUb" style="background-color: transparent;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;调查问卷&quot;}" __cid="cEFbmUb"> 
+        <div class="x-titlebar-left cEFbmUb" __cid="cEFbmUb"/>  
+        <div class="x-titlebar-title cEFbmUb" __cid="cEFbmUb">调查问卷</div>  
+        <div class="x-titlebar-right  cEFbmUb" __cid="cEFbmUb"> 
+          <div class="empty cEFbmUb" __cid="cEFbmUb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cEFbmUb" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEFbmUb"> 
+      <div xid="div6" style="padding: 0px 50px;" __cid="cEFbmUb" class="cEFbmUb"> 
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cEFbmUb" xid="output1" style="color:#FFFFFF;font-size:large;" data-bind="component:{ref:dQuestion.ref('fName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cEFbmUb"/>  
+        <span component="$model/UI2/system/components/justep/select/checkboxGroup" class="x-checkbox-group x-checkbox-group-vertical cEFbmUb" xid="checkboxGroup1" style="color:#FFFFFF;font-size:x-small;" data-bind="component:{ref:dQuestion.ref('fAnswer'),name:'$model/UI2/system/components/justep/select/checkboxGroup'},visible:$model.dQuestion.val(&quot;fType&quot;)  == '多选',foreach:{data:dOption.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-config="{&quot;itemStyle&quot;:&quot;margin: 15px 0;&quot;}" __cid="cEFbmUb"> 
+          <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cEFbmUb" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:ref('fName'),value:ref('fID')}" __cid="cEFbmUb">  
+            <input type="checkbox" __cid="cEFbmUb" class="cEFbmUb"/>  
+            <label __cid="cEFbmUb" class="cEFbmUb"/> 
+          </span> 
+        </span>  
+        <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group x-radio-group-vertical cEFbmUb" xid="radioGroup1" style="color:#FFFFFF;font-size:x-small;" data-bind="component:{ref:dQuestion.ref('fAnswer'),name:'$model/UI2/system/components/justep/select/radioGroup'},visible:$model.dQuestion.val(&quot;fType&quot;)  == '单选',foreach:{data:dOption.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-config="{&quot;itemStyle&quot;:&quot;margin: 15px 0;&quot;}" __cid="cEFbmUb"> 
+          <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cEFbmUb" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('fName'),value:ref('fID')}" __cid="cEFbmUb">  
+            <input type="radio" __cid="cEFbmUb" class="cEFbmUb"/>  
+            <label __cid="cEFbmUb" class="cEFbmUb"/> 
+          </span> 
+        </span>  
+        <div xid="div2" style="padding: 5px 0;" __cid="cEFbmUb" class="cEFbmUb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-yellow btn-icon-left cEFbmUb" xid="btnPrev" style="" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.dQuestion.getCurrentRow() !=  $model.dQuestion.getFirstRow(),disable:$model.dTemp.val(&quot;isSuccess&quot;)" data-events="onClick:{operation:'dQuestion.prevRow'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-left-a&quot;,&quot;label&quot;:&quot;上一题&quot;}" __cid="cEFbmUb"> 
+            <i xid="i1" class="icon-arrow-left-a cEFbmUb" __cid="cEFbmUb"/>  
+            <span xid="span1" __cid="cEFbmUb" class="cEFbmUb">上一题</span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-yellow btn-icon-right cEFbmUb" xid="btnNext" style="float: right;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.dQuestion.getCurrentRow() !=  $model.dQuestion.getLastRow()" data-events="onClick:btnNextClick" data-config="{&quot;icon&quot;:&quot;icon-arrow-right-a&quot;,&quot;label&quot;:&quot;下一题&quot;}" __cid="cEFbmUb"> 
+            <i xid="i2" class="icon-arrow-right-a cEFbmUb" __cid="cEFbmUb"/>  
+            <span xid="span2" __cid="cEFbmUb" class="cEFbmUb">下一题</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div xid="div1" style="margin-top: 10px;padding:5px 50px;border:solid thin #FFFFFF;" __cid="cEFbmUb" class="cEFbmUb" data-bind="visible:$model.dQuestion.getCurrentRow() ==  $model.dQuestion.getLastRow()"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cEFbmUb" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEFbmUb"> 
+          <div class="x-col x-col-fixed cEFbmUb" xid="col1" style="width:50px;" __cid="cEFbmUb"> 
+            <span xid="span4" __cid="cEFbmUb" class="cEFbmUb">姓名*</span> 
+          </div>  
+          <div class="x-col cEFbmUb" xid="col2" __cid="cEFbmUb"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cEFbmUb" xid="input1" data-bind="component:{ref:dUser.ref('fName'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;maxLength&quot;:&quot;50&quot;}" __cid="cEFbmUb"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cEFbmUb" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEFbmUb"> 
+          <div class="x-col x-col-fixed cEFbmUb" xid="col4" style="width:50px;" __cid="cEFbmUb"> 
+            <span xid="span5" __cid="cEFbmUb" class="cEFbmUb">手机*</span> 
+          </div>  
+          <div class="x-col cEFbmUb" xid="col5" __cid="cEFbmUb"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cEFbmUb" xid="input2" required="required" data-bind="component:{ref:dUser.ref('fPhone'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;maxLength&quot;:&quot;11&quot;}" __cid="cEFbmUb"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cEFbmUb" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEFbmUb"> 
+          <div class="x-col x-col-fixed cEFbmUb" xid="col8" style="width:50px;" __cid="cEFbmUb"> 
+            <span xid="span6" __cid="cEFbmUb" class="cEFbmUb">单位</span> 
+          </div>  
+          <div class="x-col cEFbmUb" xid="col9" __cid="cEFbmUb"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cEFbmUb" xid="input3" data-bind="component:{ref:dUser.ref('fCompany'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;maxLength&quot;:&quot;50&quot;}" __cid="cEFbmUb"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row x-row-center cEFbmUb" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEFbmUb"> 
+          <div class="x-col x-col-fixed cEFbmUb" xid="col10" style="width:50px;" __cid="cEFbmUb"> 
+            <span xid="span7" __cid="cEFbmUb" class="cEFbmUb">邮件</span> 
+          </div>  
+          <div class="x-col cEFbmUb" xid="col11" __cid="cEFbmUb"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm cEFbmUb" xid="input4" data-bind="component:{ref:dUser.ref('fEmail'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;maxLength&quot;:&quot;50&quot;}" __cid="cEFbmUb"/> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cEFbmUb" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEFbmUb"> 
+          <div class="x-col cEFbmUb" xid="col3" __cid="cEFbmUb"/>  
+          <div class="x-col x-col-fixed cEFbmUb" xid="col6" style="width:120px;" __cid="cEFbmUb"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn x-green btn-icon-right cEFbmUb" xid="btnSave" style="float: right;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.dQuestion.getCurrentRow() ==  $model.dQuestion.getLastRow(),disable:$model.dTemp.val(&quot;isSuccess&quot;)" data-events="onClick:btnSaveClick" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;,&quot;label&quot;:&quot;提交问卷&quot;}" __cid="cEFbmUb"> 
+              <i xid="i3" class="icon-android-checkmark cEFbmUb" __cid="cEFbmUb"/>  
+              <span xid="span3" __cid="cEFbmUb" class="cEFbmUb">提交问卷</span> 
+            </a> 
+          </div>  
+          <div class="x-col cEFbmUb" xid="col7" __cid="cEFbmUb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cEFbmUb" class="cEFbmUb">.x-panel.pef07defe99044609ba740d957ec59cba-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pef07defe99044609ba740d957ec59cba-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pef07defe99044609ba740d957ec59cba-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pef07defe99044609ba740d957ec59cba-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pef07defe99044609ba740d957ec59cba-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pef07defe99044609ba740d957ec59cba-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pef07defe99044609ba740d957ec59cba-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pef07defe99044609ba740d957ec59cba-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pef07defe99044609ba740d957ec59cba-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

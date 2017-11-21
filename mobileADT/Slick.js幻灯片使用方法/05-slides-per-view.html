@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+
+    .swiper-container {
+        width: 100%;
+    }
+    .swiper-slide {
+  width: 85px!important;
+  margin: 10px 20px;
+    }
+    .swiper-slide img{
+    	width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="http://219.140.62.244/img/2017/8/1/25901351310174275625446.png"></div>
+            <div class="swiper-slide"><img src="http://219.140.62.244/img/2017/8/1/25901351310174275625446.png"></div>
+            <div class="swiper-slide"><img src="http://219.140.62.244/img/2017/8/1/25901351310174275625446.png"></div>
+            <div class="swiper-slide"><img src="http://219.140.62.244/img/2017/8/1/25901351310174275625446.png"></div>
+            <div class="swiper-slide"><img src="http://219.140.62.244/img/2017/8/1/25901351310174275625446.png"></div>
+            <div class="swiper-slide"><img src="http://219.140.62.244/img/2017/8/1/25901351310174275625446.png"></div>
+        </div>
+        <!-- Add Pagination -->
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+    </script>
+</body>
+</html>

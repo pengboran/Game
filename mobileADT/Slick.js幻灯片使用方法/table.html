@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+		<title></title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.viewport {
+				width: 100%;
+				max-width: 640px;
+				min-width: 320px;
+				margin: 0 auto;
+			}
+			
+			html {
+				font-size: 20px;
+			}
+			
+			nav {
+				width: 100%;
+				max-width: 640px;
+				min-width: 320px;
+				position: fixed;
+				top: 0;
+				left: 0;
+				overflow-x: scroll;
+				background: #ccc;
+			}
+			
+			nav ul {
+				width: 28rem;
+				list-style: none;
+				display: inline-block;
+			}
+			
+			nav ul li {
+				display: inline-block;
+				width: 75px;
+				height: 40px;
+				line-height: 40px;
+				margin-left: 2%;
+				text-align: center;
+				float: left;
+			}
+			
+			.box {
+				margin-top: 50px;
+			}
+			
+			.box img {
+				width: 100%
+			}
+		</style>
+	</head>
+	<script src="jq.js"></script>
+
+	<body>
+		<section class="viewport">
+			<nav id="nav-list">
+				<ul>
+					<li onclick="mScroll(1)">小明</li>
+					<li onclick="mScroll(2)">小花</li>
+					<li onclick="mScroll(3)">小李</li>
+					<li onclick="mScroll(4)">小三</li>
+					<li onclick="mScroll(5)">小王</li>
+				</ul>
+			</nav>
+			<div class="box">
+				<div id="content-1">
+					<h3>小明</h3>
+					<div>
+						<img src="1.png">
+					</div>
+				</div>
+				<div id="content-2">
+					<h3>小花</h3>
+					<div>
+						<img src="2.png">
+					</div>
+				</div>
+				<div id="content-3">
+					<h3>小李</h3>
+					<div>
+						<img src="2.png">
+					</div>
+				</div>
+				<div id="content-4">
+					<h3>小三</h3>
+					<div>
+						<img src="2.png">
+					</div>
+				</div>
+				<div id="content-5">
+					<h3>小王</h3>
+					<div>
+						<img src="2.png">
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+
+	<script>
+		function mScroll(id) {
+			$("html,body").stop(true);
+			$("html,body").animate({
+				scrollTop: $("#content-" + id).offset().top - 50
+			}, 1000);
+			console.log($("#content-" + id).offset().top)
+
+		}
+		console.log(location.hostname)
+		confirm("你好")
+	</script>
+
+</html>

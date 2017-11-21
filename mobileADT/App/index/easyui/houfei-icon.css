@@ -1,0 +1,209 @@
+
+.houfei-userManagerIcon
+{
+	background-image: url(icons2/userManage.png) !important;
+}
+.houfei-checkIcon
+{
+	background-image: url(icons2/check_edit.png) !important;
+}
+.houfei-searchIcon
+{
+	background-image: url(icons2/search.png) !important;
+}
+.houfei-tbarCancelIcon
+{
+	background-image: url(icons2/delete.png) !important;
+}
+.houfei-treeRootIcon
+{
+	background-image: url(icons2/treeNodePackage.png) !important;
+}
+
+.houfei-treeNodeLeafIcon
+{
+	background-image: url(icons2/treeNodeLeafIcon.png) !important;
+}
+
+.houfei-treeNodePackageIcon
+{
+	background-image: url(icons2/treeNodePackage.png) !important;
+}
+
+.houfei-closeCurrentTab
+{
+	background-image: url(icons2/closeCurrentTab.png) !important;
+}
+
+.houfei-closeOtherTab
+{
+	background-image: url(icons2/delete.png) !important;
+}
+
+.houfei-homeTabIcon
+{
+	background-image: url(icons2/indexicon.gif) !important;
+}
+
+.houfei-addicon
+{
+	background-image: url(icons2/add.png) !important;
+}
+
+.houfei-editicon
+{
+	background-image: url(icons2/edit1.png) !important;
+}
+
+.houfei-refreshIcon
+{
+	background-image: url(icons2/refreshIcon.png) !important;
+}
+
+.houfei-qianzhicanshuIcon
+{
+  background-image: url(icons2/plugin_add.gif) !important;
+}
+.houfei-anquanIcon
+{
+  background-image: url(icons2/openroomicons2.gif) !important;
+}
+.houfei-jigouIcon
+{
+  background-image: url(icons2/openroomiconinfo.gif) !important;
+}
+.houfei-qudaoIcon
+{
+  background-image: url(icons2/hotelmanage.png) !important;
+}
+.houfei-rizhongIcon
+{
+  background-image: url(icons2/rss_go.png) !important;
+}
+.houfei-icon-plugin
+{
+  background-image: url(icons2/plugin.gif) !important;
+}
+.houfei-icon-reset
+{
+  background-image: url(icons2/reset_1.png) !important;
+}
+.houfei-icon-panel_organ
+{
+  background-image: url(icons2/homemanage.gif) !important;
+}
+.treeedit-icons2-edit
+{
+  background-image: url("icons2/treeedit.png");
+}
+
+.lpc_save
+{
+  background-image: url(icons2/accept.png) !important;
+  border: none;
+}
+.lpc_reset
+{
+  background-image: url(icons2/tbar_synchronize.png) !important;
+  border: none;
+}
+.lpc_close
+{
+  background-image: url(icons2/delete.png) !important;
+   border: none;
+}
+.houfei-icon-history 
+{
+  background-image: url(icons2/docs.gif) !important;
+}
+.houfei-showcontent
+{
+  background-image: url(icons2/showcontent.png) !important;
+}
+.houfei-dayin
+{
+  background-image: url(icons2/printer.png) !important;
+}
+
+
+.houfei-searchform
+{
+  background-image: url(icon/light_green.gif) !important;
+}
+
+
+.page_excel{
+	 background-image: url(icons2/rss_go.png) !important;
+}
+.expand-all{
+    background-image: url(icons2/expand-all.gif) !important;
+}
+.collapse-all{
+   background-image: url(icons2/collapse-all.gif) no-repeat;
+}
+.role_grant{
+   background-image: url(../css/extimg/cmp.gif) no-repeat;
+}
+.icon-qx{
+   background-image: url(icons2/feed_add.png) no-repeat;
+}
+.qbx{
+   background-image: url(icons2/qbx.png) no-repeat;
+}
+.openqy{  
+    background-image: url(icons2/check.png) !important;
+}
+.icon-grid{  
+    background-image: url(icons2/totalicon.png) !important;
+}
+
+.icon-systemgl{  
+    background-image: url(icons2/cog.png) !important;
+}
+
+.icon-jygl{  
+    background-image: url(icons2/sysmanagemenu.png) !important;
+}
+
+.icon-ywgl{  
+    background-image: url(icons2/connect.png) !important;
+}
+
+.icon-rcgn{  
+    background-image: url(icons2/publishicon.png) !important;
+}
+
+.icon-main{  
+    background-image: url(icons2/edit.png) !important;
+}
+.icon-report
+{
+   background-image: url(icons2/roolrecordicon.png) !important;
+}
+
+.icon-index
+{
+   background-image: url(icons2/openroomiconinfo.gif) !important;
+}
+
+.icon-grantrole
+{
+	background:url('icons2/leadparameters.png') no-repeat;
+}
+
+.icon-stop
+{
+  background:url('icons2/drop-no.gif') no-repeat;
+}
+
+.icon-tablexx
+{
+  background:url('icons2/edit1.png') no-repeat;
+}
+
+.icon-download
+{
+  background:url('icons2/Download.png') no-repeat;
+}
+
+

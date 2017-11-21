@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __justepbasexid__="__baseID__" components="$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/input/input,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p47b689d867b249fbb35668250e7a2485-iosstatusbar" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}"> 
+    <div class="x-panel-top" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1" style="background-color:#474747;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;Chats&quot;}"> 
+        <div class="x-titlebar-left" xid="div9"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon" xid="button1" style="height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backout" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/WeX5Demo/img/ac1.png&quot;,&quot;label&quot;:&quot;button&quot;}"> 
+            <img src="@justepContextPath@/$v1ea5347adc174791a941bfd6302485b9$lzh_CN$s$d/UI2/WeX5Demo/img/ac1.png" style="width: 27px; height: 27px" xid="image5"/>  
+            <span xid="span9"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title" xid="div10" id="tops">Chat</div>  
+        <div class="x-titlebar-right " xid="div11"> 
+          <div class="empty"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon" xid="button1" style="height:30px;width:38px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:adds" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/WeX5Demo/img/aix.png&quot;,&quot;label&quot;:&quot;button&quot;}"> 
+            <img src="@justepContextPath@/$v2e3623cd40934334a53a70b26d3eb7f9$lzh_CN$s$d/UI2/WeX5Demo/img/aix.png" style="width: 27px; height: 27px" xid="image5"/>  
+            <span xid="span9"/> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div region="center" style="overflow:hidden;background:#fafafa; border:1px"> 
+        <table id="msgGrid" cellspacing="0" cellpadding="0"> 
+          <thead> 
+            <tr> 
+              <th field="name" width="120">名字</th>  
+              <th field="times" width="120">时间</th>  
+              <th field="msg" width="120">信息</th> 
+            </tr> 
+          </thead> 
+        </table> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div class="input-group" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}"> 
+        <div class="input-group-btn" xid="div12"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addActive" data-config="{&quot;label&quot;:&quot;+&quot;}"> 
+            <i xid="i12"/>  
+            <span xid="span19">+</span> 
+          </a> 
+        </div>  
+        <input type="text" class="form-control" component="$model/UI2/system/components/justep/input/input" id="addmsg" xid="input13" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}"/>  
+        <div class="input-group-btn" xid="div8"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:SetMsg" data-config="{&quot;label&quot;:&quot;发送&quot;}"> 
+            <i xid="i11"/>  
+            <span xid="span18">发送</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style>.x-panel.p47b689d867b249fbb35668250e7a2485-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p47b689d867b249fbb35668250e7a2485-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p47b689d867b249fbb35668250e7a2485-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p47b689d867b249fbb35668250e7a2485-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p47b689d867b249fbb35668250e7a2485-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p47b689d867b249fbb35668250e7a2485-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p47b689d867b249fbb35668250e7a2485-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

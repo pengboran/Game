@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __justepbasexid__="__baseID__" components="$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/input/input,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog" style="top:351px;left:78px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal">  
+      <div class="x-modal-inner"> 
+        <div class="x-modal-title"/>  
+        <div class="x-modal-text"/>  
+        <input class="x-modal-prompt-input" type="text"/> 
+      </div>  
+      <div class="x-modal-buttons"> 
+        <a class="x-modal-button x-modal-button-bold OK" value="ok">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes" value="yes">是</a>  
+        <a class="x-modal-button x-modal-button-bold No" value="no">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel" value="cancel">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}"> 
+    <div class="x-contents-content active" xid="content1" style="background-image:url(@justepContextPath@/$vbf7cf15490e64e9db8c3a1949d0847e6$lzh_CN$s$dm/UI2/WeX5Demo/img/loginbg4.jpg)" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}"> 
+      <div xid="div1" style="margin:10px 50px 0px 50px;" align="center"> 
+        <img src="@justepContextPath@/$vb777adebd94b40d4ba51067076dc0925$lzh_CN$s$dm/UI2/WeX5Demo/img/a_c.png" alt="" xid="image1" height="150" style="height:111px;width:124px;"/> 
+      </div>  
+      <div class="form-vertical" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}"> 
+        <div xid="div12" class="form-group" style="margin-right:auto;margin-left:auto;width:95%;"> 
+          <label xid="label4" class="sr-only">用户名</label>  
+          <div xid="div14" class="input-group"> 
+            <div xid="div15" class="input-group-addon"> 
+              <span class="glyphicon glyphicon-user"/> 
+            </div>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control" xid="username" data-bind="component:{ref:userData.ref('username'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入用户名&quot;}"/> 
+          </div> 
+        </div>  
+        <div xid="div13" class="form-group" style="margin-right:auto;margin-left:auto;width:95%;"> 
+          <label xid="label5" class="sr-only">密码</label>  
+          <div xid="div16" class="input-group"> 
+            <div xid="div17" class="input-group-addon"> 
+              <span class="glyphicon glyphicon-edit"/> 
+            </div>  
+            <input component="$model/UI2/system/components/justep/input/password" class="form-control" xid="password" type="password" data-bind="component:{ref:userData.ref('userpass'),name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入密码&quot;}"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}"> 
+        <div class="x-col" xid="col10" style="text-align:center;"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-green btn-lg btn-block" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnCheckUserLogin" data-config="{&quot;label&quot;:&quot;Sign In&quot;}"> 
+            <i xid="i1"/>  
+            <span xid="span1">SiGn.IN</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div xid="div3" style="margin:50px 20px 50px 20px;height:50px;text-align:center;"> 
+        <span xid="span2" style="height:41px;">© By:
+          <a href="http://s163.cc">Chat.S163.Cc</a> 
+        </span> 
+      </div> 
+    </div> 
+  </div> 
+</div>
